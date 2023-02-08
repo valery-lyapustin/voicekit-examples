@@ -27,8 +27,8 @@ service SpeechToText { // Speech recognition.
 
   rpc StreamingUnaryRecognize(stream StreamingUnaryRecognizeRequest) returns (RecognizeResponse) { // Method to synchronous recognize audio stream. Returns recognition result after all audio has been sent and processed.
     option (google.api.http) = {
-      post: "/v1/stt:streaming_unary_recognize";
-      body: "*";
+      post: "/v1/stt:streaming_unary_recognize"
+      body: "*"
     };
   }
 }
